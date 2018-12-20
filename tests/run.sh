@@ -12,4 +12,4 @@ docker-compose exec postgres make check-ready -f /usr/local/bin/actions.mk max_t
 
 docker-compose exec python tests.sh
 
-#docker-compose down
+docker-compose down

@@ -5,9 +5,9 @@ FROM wodby/python:${PYTHON_TAG}
 COPY requirements.txt .
 
 RUN pip install -r requirements.txt
-RUN django-admin startproject mysite .
+RUN django-admin startproject myapp .
 
-COPY settings-additions.py /tmp
+COPY settings-additions.py /tmp/
 RUN cat /tmp/settings-additions.py >> mysite/settings.py
 
 ENV GUNICORN_APP myapp.wsgi:application
