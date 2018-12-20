@@ -10,5 +10,5 @@ RUN django-admin startproject mysite .
 COPY settings-additions.py /tmp
 RUN cat /tmp/settings-additions.py >> mysite/settings.py
 
-ENV GUNICORN_APP mysite.wsgi:application
-CMD ["sudo", "-E", "/etc/init.d/gunicorn"]
+ENV GUNICORN_APP myapp.wsgi:application
+CMD ["/etc/init.d/gunicorn"]

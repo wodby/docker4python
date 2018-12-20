@@ -17,5 +17,5 @@ RUN pip install -r requirements.txt
 
 # By default we start Gunicorn server, modify to change it.
 #ENV GUNICORN_PYTHONPATH subdir
-ENV GUNICORN_APP mysite.wsgi:application
-CMD ["sudo", "-E", "/etc/init.d/gunicorn"]
+ENV GUNICORN_APP myapp.wsgi:application
+CMD ["/etc/init.d/gunicorn"]
