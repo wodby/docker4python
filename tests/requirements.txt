@@ -1,0 +1,4 @@
+Django
+gunicorn
+psycopg2
+django-redis
