@@ -1,0 +1,48 @@
+version: "2"
+
+services:
+  postgres:
+    image: wodby/postgres:$POSTGRES_TAG
+    environment:
+      POSTGRES_PASSWORD: $DB_PASSWORD
+      POSTGRES_DB: $DB_NAME
+      POSTGRES_USER: $DB_USER
+
+  python:
+    build:
+      context: ./
+      args:
+        PYTHON_TAG: $PYTHON_VER-dev-$PYTHON_STABILITY_TAG
+    environment:
+      DEBUG: 1
+      DB_HOST: $DB_HOST
+      DB_USER: $DB_USER
+      DB_NAME: $DB_NAME
+      DB_PASSWORD: $DB_PASSWORD
+      DB_ENGINE: $DB_ENGINE
+    volumes:
+      - codebase:/usr/src/app
+      - ./tests.sh:/usr/local/bin/tests.sh
+    depends_on:
+      - postgres
+
+  redis:
+    image: wodby/redis:$REDIS_TAG
+
+  nginx:
+#    image: wodby/nginx:$NGINX_TAG
+    image: wodby/nginx
+    environment:
+      NGINX_STATIC_OPEN_FILE_CACHE: "off"
+      NGINX_ERROR_LOG_LEVEL: debug
+      NGINX_VHOST_PRESET: django
+      NGINX_BACKEND_HOST: python
+    ports:
+      - 8080:80
+    volumes:
+      - codebase:/var/www/html
+    depends_on:
+      - python
+
+volumes:
+  codebase:
