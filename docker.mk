@@ -15,9 +15,9 @@ up:
 	docker-compose build
 	docker-compose up -d --remove-orphans
 
-## down	:	Build containers.
+## build	:	Build python image.
 build:
-	@echo "Building containers for for $(PROJECT_NAME)..."
+	@echo "Building python image for for $(PROJECT_NAME)..."
 	docker-compose build
 
 ## down	:	Stop containers.
