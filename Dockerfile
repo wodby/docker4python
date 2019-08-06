@@ -15,7 +15,9 @@ COPY requirements.txt ./
 RUN pip install -r requirements.txt
 #RUN pipenv install --skip-lock --system --dev
 
-# By default we start Gunicorn server, modify to change it.
-#ENV GUNICORN_PYTHONPATH subdir
+# We assume your project name is "myapp".
 ENV GUNICORN_APP myapp.wsgi:application
+# By default we start Gunicorn server, modify to change it.
+# If your project is in a subdirectory.
+#ENV GUNICORN_PYTHONPATH subdir
 CMD ["/etc/init.d/gunicorn"]
