@@ -12,7 +12,7 @@ services:
     build:
       context: ./
       args:
-        PYTHON_TAG: $PYTHON_VER-dev-$PYTHON_STABILITY_TAG
+        PYTHON_TAG: "${PYTHON_VER}-dev-${PYTHON_STABILITY_TAG}"
     environment:
       DEBUG: 1
       DB_HOST: $DB_HOST
