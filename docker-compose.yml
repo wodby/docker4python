@@ -62,17 +62,14 @@ services:
 #      - ./:/usr/src/app:cached # User-guided caching
 #      - docker-sync:/usr/src/app # Docker-sync
     labels:
-      - 'traefik.backend=${PROJECT_NAME}_nginx'
-      - 'traefik.port=80'
-      - 'traefik.frontend.rule=Host:${PROJECT_BASE_URL}'
+      - "traefik.http.routers.${PROJECT_NAME}_nginx.rule=Host(`${PROJECT_BASE_URL}`)"
 
   mailhog:
     image: mailhog/mailhog
     container_name: "${PROJECT_NAME}_mailhog"
     labels:
-      - 'traefik.backend=${PROJECT_NAME}_mailhog'
-      - 'traefik.port=8025'
-      - 'traefik.frontend.rule=Host:mailhog.${PROJECT_BASE_URL}'
+      - "traefik.http.services.${PROJECT_NAME}_mailhog.loadbalancer.server.port=8025"
+      - "traefik.http.routers.${PROJECT_NAME}_mailhog.rule=Host(`mailhog.${PROJECT_BASE_URL}`)"
 
 #  varnish:
 #    image: wodby/varnish:$VARNISH_TAG
@@ -85,9 +82,8 @@ services:
 #      VARNISH_BACKEND_PORT: 80
 #      VARNISH_ALLOW_UNRESTRICTED_PURGE: 1
 #    labels:
-#      - 'traefik.backend=${PROJECT_NAME}_varnish'
-#      - 'traefik.port=6081'
-#      - 'traefik.frontend.rule=Host:varnish.${PROJECT_BASE_URL}'
+#      - "traefik.http.services.${PROJECT_NAME}_varnish.loadbalancer.server.port=6081"
+#      - "traefik.http.routers.${PROJECT_NAME}_varnish.rule=Host(`varnish.${PROJECT_BASE_URL}`)"
 
   redis:
     container_name: "${PROJECT_NAME}_redis"
@@ -103,9 +99,7 @@ services:
 #      ADMINER_DEFAULT_DB_HOST: $DB_HOST
 #      ADMINER_DEFAULT_DB_NAME: $DB_NAME
 #    labels:
-#      - 'traefik.backend=${PROJECT_NAME}_adminer'
-#      - 'traefik.port=9000'
-#      - 'traefik.frontend.rule=Host:adminer.${PROJECT_BASE_URL}'
+#      - "traefik.http.routers.${PROJECT_NAME}_adminer.rule=Host(`adminer.${PROJECT_BASE_URL}`)"
 
 #  solr:
 #    image: wodby/solr:$SOLR_TAG
@@ -113,9 +107,7 @@ services:
 #    environment:
 #      SOLR_HEAP: 1024m
 #    labels:
-#      - 'traefik.backend=${PROJECT_NAME}_solr'
-#      - 'traefik.port=8983'
-#      - 'traefik.frontend.rule=Host:solr.${PROJECT_BASE_URL}'
+#      - "traefik.http.routers.${PROJECT_NAME}_solr.rule=Host(`solr.${PROJECT_BASE_URL}`)"
 
 #  elasticsearch:
 #    image: wodby/elasticsearch:$ELASTICSEARCH_TAG
@@ -131,9 +123,8 @@ services:
 #    depends_on:
 #      - elasticsearch
 #    labels:
-#      - 'traefik.backend=${PROJECT_NAME}_kibana'
-#      - 'traefik.port=5601'
-#      - 'traefik.frontend.rule=Host:kibana.${PROJECT_BASE_URL}'
+#      - "traefik.http.services.${PROJECT_NAME}_kibana.loadbalancer.server.port=5601"
+#      - "traefik.http.routers.${PROJECT_NAME}_kibana.rule=Host(`kibana.${PROJECT_BASE_URL}`)"
 
 #  memcached:
 #    container_name: "${PROJECT_NAME}_memcached"
@@ -159,9 +150,8 @@ services:
 #    container_name: "${PROJECT_NAME}_node"
 #    working_dir: /app
 #    labels:
-#      - 'traefik.backend=${PROJECT_NAME}_node'
-#      - 'traefik.port=3000'
-#      - 'traefik.frontend.rule=Host:front.${PROJECT_BASE_URL}'
+#      - "traefik.http.services.${PROJECT_NAME}_node.loadbalancer.server.port=3000"
+#      - "traefik.http.routers.${PROJECT_NAME}_node.rule=Host(`node.${PROJECT_BASE_URL}`)"
 #    expose:
 #      - "3000"
 #    volumes:
@@ -179,14 +169,12 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     labels:
-      - 'traefik.backend=${PROJECT_NAME}_portainer'
-      - 'traefik.port=9000'
-      - 'traefik.frontend.rule=Host:portainer.${PROJECT_BASE_URL}'
+    - "traefik.http.routers.${PROJECT_NAME}_portainer.rule=Host(`portainer.${PROJECT_BASE_URL}`)"
 
   traefik:
-    image: traefik:1.7-alpine
+    image: traefik:v2.0
     container_name: "${PROJECT_NAME}_traefik"
-    command: -c /dev/null --web --docker --logLevel=INFO
+    command: --api.insecure=true --providers.docker
     ports:
       - '8000:80'
 #      - '8080:8080' # Dashboard
