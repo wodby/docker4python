@@ -7,8 +7,7 @@ env:
   matrix:
   - PYTHON_VER=3.7
   - PYTHON_VER=3.6
-  - PYTHON_VER=3.5
-  - PYTHON_VER=2.7 GITHUB_RELEASE=1
+  - PYTHON_VER=3.5 GITHUB_RELEASE=1
 
 script:
 - set -e
