@@ -1,3 +1,4 @@
+import os
 
 DATABASES = {
     'default': {
