@@ -15,6 +15,11 @@ up:
 	docker-compose build
 	docker-compose up -d --remove-orphans
 
+.PHONE: mutagen
+mutagen:
+	docker-compose up -d mutagen
+	mutagen project start -f mutagen/config.yml
+
 ## build	:	Build python image.
 build:
 	@echo "Building python image for for $(PROJECT_NAME)..."
