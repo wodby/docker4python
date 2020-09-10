@@ -40,8 +40,8 @@ services:
       DB_ENGINE: $DB_ENGINE
     volumes:
     - ./:/usr/src/app:cached
-#    # Alternative for macOS users: docker-sync https://wodby.com/docs/stacks/drupal/local#docker-for-mac
-#    - docker-sync:/usr/src/app
+## Alternative for macOS users: Mutagen https://wodby.com/docs/stacks/python/local#docker-for-mac
+#    - mutagen:/usr/src/app
 
   nginx:
     image: wodby/nginx:$NGINX_TAG
@@ -57,8 +57,8 @@ services:
       #NGINX_VHOST_PRESET: http-proxy
     volumes:
     - ./:/usr/src/app:cached
-#    # Alternative for macOS users: docker-sync https://wodby.com/docs/stacks/drupal/local#docker-for-mac
-#    - docker-sync:/usr/src/app
+## Alternative for macOS users: Mutagen https://wodby.com/docs/stacks/python/local#docker-for-mac
+#    - mutagen:/usr/src/app
     labels:
     - "traefik.http.routers.${PROJECT_NAME}_nginx.rule=Host(`${PROJECT_BASE_URL}`)"
 
@@ -181,8 +181,7 @@ services:
     - /var/run/docker.sock:/var/run/docker.sock
 
 #volumes:
-## Docker-sync for macOS users
-#  docker-sync:
-#    external: true
+## Mutagen for macOS users
+#  mutagen:
 ## For Xdebug profiler
 #  files:
