@@ -1,6 +1,6 @@
 # Docker-based Python stack
 
-[![Build Status](https://travis-ci.com/wodby/docker4python.svg?branch=master)](https://travis-ci.com/wodby/docker4python)
+[![Build Status](https://github.com/wodby/docker4python/workflows/Run%20tests/badge.svg)](https://github.com/wodby/docker4python/actions)
 
 ## Introduction
 
@@ -28,7 +28,7 @@ The Python stack consist of the following containers:
 | [Kibana]        | 7, 6                    | `kibana`        | [wodby/kibana]                     |         |
 | [Memcached]     | 1                       | `memcached`     | [wodby/memcached]                  |         |
 | [Rsyslog]       | latest                  | `rsyslog`       | [wodby/rsyslog]                    |         |
-| [AthenaPDF]     | 2.10.0                  | `athenapdf`     | [arachnysdocker/athenapdf-service] |         |
+| [AthenaPDF]     | 2.16.0                  | `athenapdf`     | [arachnysdocker/athenapdf-service] |         |
 | [Mailhog]       | latest                  | `mailhog`       | [mailhog/mailhog]                  | ✓       |
 | [OpenSMTPD]     | 6.0                     | `opensmtpd`     | [wodby/opensmtpd]                  |         |
 | Adminer         | 4.6                     | `adminer`       | [wodby/adminer]                    |         |
