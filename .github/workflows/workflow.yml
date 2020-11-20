@@ -39,9 +39,3 @@ jobs:
         overwrite: true
         tags: true
         draft: true
-        prerelease: true
-    - uses: eregon/publish-release@v1.0.3
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        release_id: ${{ steps.upload_artifact.outputs.release_name }}
