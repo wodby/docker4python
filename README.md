@@ -17,7 +17,7 @@ The Python stack consist of the following containers:
 | Container       | Versions                | Service name    | Image                              | Default |
 | -------------   | ----------------        | --------------- | ---------------------------------- | ------- |
 | [Nginx]         | 1.19, 1.18              | `nginx`         | [wodby/nginx]                      | ✓       |
-| [Python]        | 3.x                     | `python`        | [wodby/python]                     | ✓       |
+| [Python]        | 3.9, 3.8, 3.7, 3.6      | `python`        | [wodby/python]                     | ✓       |
 | [PostgreSQL]    | 13, 12, 11, 10, 9.x     | `postgres`      | [wodby/postgres]                   | ✓       |
 | [Redis]         | 6, 5                    | `redis`         | [wodby/redis]                      | ✓       |
 | [MariaDB]       | 10.5, 10.4, 10.3, 10.2  | `mariadb`       | [wodby/mariadb]                    |         |
