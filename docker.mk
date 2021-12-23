@@ -17,8 +17,7 @@ up:
 
 .PHONY: mutagen
 mutagen:
-	docker-compose up -d mutagen
-	mutagen project start -f mutagen/config.yml
+	mutagen-compose up
 
 ## build	:	Build python image.
 build:
