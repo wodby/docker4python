@@ -14,25 +14,25 @@ Docker4Python is a set of docker images optimized for Python applications (suita
 
 The Python stack consist of the following containers:
 
-| Container       | Versions                 | Image                              | ARM64 support | Enabled by default |
-|-----------------|--------------------------|------------------------------------|---------------|--------------------|
-| [Nginx]         | 1.21, 1.20, 1.19         | [wodby/nginx]                      | ✓             | ✓                  |
-| [Python]        | 3.10, 3.9, 3.8, 3.7, 3.6 | [wodby/python]                     | ✓             | ✓                  |
-| [PostgreSQL]    | 14, 13, 12, 11, 10       | [wodby/postgres]                   | ✓             | ✓                  |
-| [Redis]         | 6, 5                     | [wodby/redis]                      | ✓             | ✓                  |
-| [MariaDB]       | 10.2-10.7                | [wodby/mariadb]                    | ✓             |                    |
-| [Node.js]       | 16, 14, 12               | [wodby/node]                       |               |                    |
-| [Varnish]       | 6.0, 4.1                 | [wodby/varnish]                    |               |                    |
-| [Solr]          | 8, 7, 6, 5               | [wodby/solr]                       |               |                    |
-| [Elasticsearch] | 7, 6                     | [wodby/elasticsearch]              |               |                    |
-| [Kibana]        | 7, 6                     | [wodby/kibana]                     |               |                    |
-| [Memcached]     | 1                        | [wodby/memcached]                  |               |                    |
-| [Rsyslog]       | latest                   | [wodby/rsyslog]                    |               |                    |
-| [AthenaPDF]     | 2.16.0                   | [arachnysdocker/athenapdf-service] |               |                    |
-| [Mailhog]       | latest                   | [mailhog/mailhog]                  |               | ✓                  |
-| [OpenSMTPD]     | 6.0                      | [wodby/opensmtpd]                  |               |                    |
-| Adminer         | 4.6                      | [wodby/adminer]                    |               |                    |
-| Traefik         | latest                   | [_/traefik]                        | ✓             | ✓                  |
+| Container       | Versions            | Image                              | ARM64 support | Enabled by default |
+|-----------------|---------------------|------------------------------------|---------------|--------------------|
+| [Nginx]         | 1.21, 1.20, 1.19    | [wodby/nginx]                      | ✓             | ✓                  |
+| [Python]        | 3.10, 3.9, 3.8, 3.7 | [wodby/python]                     | ✓             | ✓                  |
+| [PostgreSQL]    | 14, 13, 12, 11, 10  | [wodby/postgres]                   | ✓             | ✓                  |
+| [Redis]         | 6, 5                | [wodby/redis]                      | ✓             | ✓                  |
+| [MariaDB]       | 10.2-10.7           | [wodby/mariadb]                    | ✓             |                    |
+| [Node.js]       | 16, 14, 12          | [wodby/node]                       |               |                    |
+| [Varnish]       | 6.0, 4.1            | [wodby/varnish]                    |               |                    |
+| [Solr]          | 8, 7, 6, 5          | [wodby/solr]                       |               |                    |
+| [Elasticsearch] | 7, 6                | [wodby/elasticsearch]              |               |                    |
+| [Kibana]        | 7, 6                | [wodby/kibana]                     |               |                    |
+| [Memcached]     | 1                   | [wodby/memcached]                  |               |                    |
+| [Rsyslog]       | latest              | [wodby/rsyslog]                    |               |                    |
+| [AthenaPDF]     | 2.16.0              | [arachnysdocker/athenapdf-service] |               |                    |
+| [Mailhog]       | latest              | [mailhog/mailhog]                  |               | ✓                  |
+| [OpenSMTPD]     | 6.0                 | [wodby/opensmtpd]                  |               |                    |
+| Adminer         | 4.6                 | [wodby/adminer]                    |               |                    |
+| Traefik         | latest              | [_/traefik]                        | ✓             | ✓                  |
 
 ## Documentation
 
