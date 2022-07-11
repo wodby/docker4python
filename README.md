@@ -16,12 +16,12 @@ The Python stack consist of the following containers:
 
 | Container       | Versions            | Image                              | ARM64 support | Enabled by default |
 |-----------------|---------------------|------------------------------------|---------------|--------------------|
-| [Nginx]         | 1.21, 1.20, 1.19    | [wodby/nginx]                      | ✓             | ✓                  |
+| [Nginx]         | 1.23, 1.22, 1.21    | [wodby/nginx]                      | ✓             | ✓                  |
 | [Python]        | 3.10, 3.9, 3.8, 3.7 | [wodby/python]                     | ✓             | ✓                  |
 | [PostgreSQL]    | 14, 13, 12, 11, 10  | [wodby/postgres]                   | ✓             | ✓                  |
 | [Redis]         | 7, 6, 5             | [wodby/redis]                      | ✓             | ✓                  |
 | [MariaDB]       | 10.8-10.3           | [wodby/mariadb]                    | ✓             |                    |
-| [Node.js]       | 16, 14, 12          | [wodby/node]                       |               |                    |
+| [Node.js]       | 18, 16, 14          | [wodby/node]                       |               |                    |
 | [Varnish]       | 6.0, 4.1            | [wodby/varnish]                    |               |                    |
 | [Solr]          | 8, 7, 6, 5          | [wodby/solr]                       |               |                    |
 | [Elasticsearch] | 7, 6                | [wodby/elasticsearch]              |               |                    |
