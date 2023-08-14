@@ -1,5 +1,3 @@
-version: "3"
-
 services:
   postgres:
     image: wodby/postgres:$POSTGRES_TAG
