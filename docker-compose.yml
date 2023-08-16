@@ -88,6 +88,7 @@ services:
 #  adminer:
 #    container_name: "${PROJECT_NAME}_adminer"
 #    image: wodby/adminer:$ADMINER_TAG
+#    init: true
 #    environment:
 #      ADMINER_DEFAULT_DB_DRIVER: pgsql
 ##      # For MariaDB:
