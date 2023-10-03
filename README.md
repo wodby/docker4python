@@ -22,7 +22,7 @@ The Python stack consist of the following containers:
 | [PostgreSQL]    | 15, 14, 13, 12, 11         | [wodby/postgres]                   | ✓             | ✓                  |
 | [Redis]         | 7, 6, 5                    | [wodby/redis]                      | ✓             | ✓                  |
 | [MariaDB]       | 11, 10.11-10.4             | [wodby/mariadb]                    | ✓             |                    |
-| [Node.js]       | 18, 16, 14                 | [wodby/node]                       |               |                    |
+| [Node.js]       | 20, 18                     | [wodby/node]                       |               |                    |
 | [Varnish]       | 6.0                        | [wodby/varnish]                    |               |                    |
 | [Solr]          | 8, 7, 6, 5                 | [wodby/solr]                       |               |                    |
 | [Elasticsearch] | 7, 6                       | [wodby/elasticsearch]              |               |                    |
