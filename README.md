@@ -25,8 +25,8 @@ The Python stack consist of the following containers:
 | [Node.js]       | 20, 18                     | [wodby/node]                       |               |                    |
 | [Varnish]       | 6.0                        | [wodby/varnish]                    |               |                    |
 | [Solr]          | 8, 7, 6, 5                 | [wodby/solr]                       |               |                    |
-| [Elasticsearch] | 7, 6                       | [wodby/elasticsearch]              |               |                    |
-| [Kibana]        | 7, 6                       | [wodby/kibana]                     |               |                    |
+| [Elasticsearch] | 7                          | [wodby/elasticsearch]              |               |                    |
+| [Kibana]        | 7                          | [wodby/kibana]                     |               |                    |
 | [Memcached]     | 1                          | [wodby/memcached]                  |               |                    |
 | [Rsyslog]       | latest                     | [wodby/rsyslog]                    |               |                    |
 | [AthenaPDF]     | 2.16.0                     | [arachnysdocker/athenapdf-service] |               |                    |
