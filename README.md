@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Docker4Python is a set of docker images optimized for Python applications (suitable for Django). Use `docker-compose.yml` file from the [latest stable release](https://github.com/wodby/docker4python/releases) to spin up local environment on Linux, Mac OS X and Windows. 
+Docker4Python is a set of docker images optimized for Python applications (suitable for Django). Use `compose.yml` file from the [latest stable release](https://github.com/wodby/docker4python/releases) to spin up local environment on Linux, Mac OS X and Windows. 
 
 - Read the docs on [**how to use**](https://wodby.com/docs/stacks/python/local#usage)
 - Ask questions on [Discord](http://discord.wodby.com/)
