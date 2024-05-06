@@ -24,8 +24,8 @@ services:
     depends_on:
       - postgres
 
-  redis:
-    image: wodby/redis:$REDIS_TAG
+  valkey:
+    image: wodby/valkey:$VALKEY_TAG
 
   nginx:
 #    image: wodby/nginx:$NGINX_TAG
