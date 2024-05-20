@@ -17,7 +17,7 @@ The Python stack consist of the following containers:
 
 | Container       | Versions                    | Image                              | ARM64 support | Enabled by default |
 |-----------------|-----------------------------|------------------------------------|---------------|--------------------|
-| [Nginx]         | 1.25, 1.24                  | [wodby/nginx]                      | ✓             | ✓                  |
+| [Nginx]         | 1.26, 1.25                  | [wodby/nginx]                      | ✓             | ✓                  |
 | [Python]        | 3.12, 3.11, 3.10, 3.9, 3.8  | [wodby/python]                     | ✓             | ✓                  |
 | [PostgreSQL]    | 16, 15, 14, 13, 12          | [wodby/postgres]                   | ✓             | ✓                  |
 | [Valkey]        | 7                           | [wodby/valkey]                     | ✓             | ✓                  |
