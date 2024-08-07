@@ -22,17 +22,17 @@ The Python stack consist of the following containers:
 | [PostgreSQL]    | 16, 15, 14, 13, 12          | [wodby/postgres]                   | ✓             | ✓                  |
 | [Valkey]        | 7                           | [wodby/valkey]                     | ✓             | ✓                  |
 | [MariaDB]       | 11, 10.11, 10.6, 10.5, 10.4 | [wodby/mariadb]                    | ✓             |                    |
-| [Node.js]       | 20, 18                      | [wodby/node]                       |               |                    |
-| [Varnish]       | 6.0                         | [wodby/varnish]                    |               |                    |
+| [Node.js]       | 20, 18                      | [wodby/node]                       | ✓             |                    |
+| [Varnish]       | 6.0                         | [wodby/varnish]                    | ✓             |                    |
 | [Solr]          | 8                           | [wodby/solr]                       |               |                    |
 | [Elasticsearch] | 7                           | [wodby/elasticsearch]              |               |                    |
 | [Kibana]        | 7                           | [wodby/kibana]                     |               |                    |
 | [Memcached]     | 1                           | [wodby/memcached]                  |               |                    |
 | [Rsyslog]       | latest                      | [wodby/rsyslog]                    |               |                    |
 | [AthenaPDF]     | 2.16.0                      | [arachnysdocker/athenapdf-service] |               |                    |
-| [Mailhog]       | latest                      | [mailhog/mailhog]                  |               | ✓                  |
-| [OpenSMTPD]     | 6.0                         | [wodby/opensmtpd]                  |               |                    |
-| Adminer         | 4.6                         | [wodby/adminer]                    |               |                    |
+| Mailpit         | latest                      | [axllent/mailpit]                  |               | ✓                  |
+| [OpenSMTPD]     | 6.0                         | [wodby/opensmtpd]                  | ✓             |                    |
+| Adminer         | 4.6                         | [wodby/adminer]                    | ✓             |                    |
 | Traefik         | latest                      | [_/traefik]                        | ✓             | ✓                  |
 
 ## Documentation
@@ -67,7 +67,6 @@ This project is licensed under the MIT open source license.
 [AthenaPDF]: https://wodby.com/docs/stacks/python/containers#athenapdf
 [Elasticsearch]: https://wodby.com/docs/stacks/elasticsearch
 [Kibana]: https://wodby.com/docs/stacks/elasticsearch
-[Mailhog]: https://wodby.com/docs/stacks/python/containers#mailhog
 [MariaDB]: https://wodby.com/docs/stacks/python/containers#mariadb
 [Memcached]: https://wodby.com/docs/stacks/python/containers#memcached
 [Nginx]: https://wodby.com/docs/stacks/python/containers#nginx
@@ -83,7 +82,7 @@ This project is licensed under the MIT open source license.
 [_/traefik]: https://hub.docker.com/_/traefik
 [arachnysdocker/athenapdf-service]: https://hub.docker.com/r/arachnysdocker/athenapdf-service
 [blackfire/blackfire]: https://hub.docker.com/r/blackfire/blackfire
-[mailhog/mailhog]: https://hub.docker.com/r/mailhog/mailhog
+[axllent/mailpit]: https://hub.docker.com/r/axllent/mailpit
 [wodby/adminer]: https://hub.docker.com/r/wodby/adminer
 [wodby/elasticsearch]: https://github.com/wodby/elasticsearch
 [wodby/kibana]: https://github.com/wodby/kibana
