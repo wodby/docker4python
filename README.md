@@ -20,7 +20,7 @@ The Python stack consist of the following containers:
 | [Nginx]         | 1.27, 1.26                 | [wodby/nginx]         | ✓             | ✓                  |
 | [Python]        | 3.12, 3.11, 3.10, 3.9, 3.8 | [wodby/python]        | ✓             | ✓                  |
 | [PostgreSQL]    | 16, 15, 14, 13, 12         | [wodby/postgres]      | ✓             | ✓                  |
-| [Valkey]        | 7                          | [wodby/valkey]        | ✓             | ✓                  |
+| [Valkey]        | 8, 7                       | [wodby/valkey]        | ✓             | ✓                  |
 | [MariaDB]       | 11.4, 10.6, 10.5, 10.4     | [wodby/mariadb]       | ✓             |                    |
 | [Node.js]       | 20, 18                     | [wodby/node]          | ✓             |                    |
 | [Varnish]       | 6.0                        | [wodby/varnish]       | ✓             |                    |
