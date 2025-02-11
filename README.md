@@ -24,7 +24,7 @@ The Python stack consist of the following containers:
 | [MariaDB]       | 11.4, 10.6, 10.5, 10.4      | [wodby/mariadb]       | ✓             |                    |
 | [Node.js]       | 22, 20, 18                  | [wodby/node]          | ✓             |                    |
 | [Varnish]       | 6.0                         | [wodby/varnish]       | ✓             |                    |
-| [Solr]          | 8                           | [wodby/solr]          |               |                    |
+| [Solr]          | 9                           | [wodby/solr]          |               |                    |
 | [Elasticsearch] | 7                           | [wodby/elasticsearch] |               |                    |
 | [Kibana]        | 7                           | [wodby/kibana]        |               |                    |
 | [Memcached]     | 1                           | [wodby/memcached]     |               |                    |
