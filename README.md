@@ -33,7 +33,7 @@ The Python stack consist of the following containers:
 | Gotenberg             | latest                      | [gotenberg/gotenberg]                     | ✓             | ✓                  |
 | Mailpit               | latest                      | [axllent/mailpit]                         | ✓             | ✓                  |
 | [OpenSMTPD]           | 7                           | [wodby/opensmtpd]                         | ✓             |                    |
-| Adminer               | 4.6                         | [wodby/adminer]                           | ✓             |                    |
+| Adminer               | 5                           | [wodby/adminer]                           | ✓             |                    |
 | Traefik               | latest                      | [_/traefik]                               | ✓             | ✓                  |
 
 ## Documentation
