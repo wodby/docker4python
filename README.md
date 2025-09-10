@@ -14,7 +14,7 @@ Docker4Python is a set of docker images optimized for Python applications (suita
 
 ## Stack
 
-The Python stack consist of the following containers:
+The Python stack consists of the following containers:
 
 | Container             | Versions                    | Image                                     | ARM64 support | Enabled by default |
 |-----------------------|-----------------------------|-------------------------------------------|---------------|--------------------|
