@@ -14,10 +14,10 @@ jobs:
   test:
     strategy:
       matrix:
-        version: [ '3.13', '3.12', '3.11','3.10','3.9' ]
+        version: [ '3.14', '3.13', '3.12', '3.11', '3.10', '3.9' ]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
       - name: test
         env:
           PYTHON_VER: ${{ matrix.version }}
@@ -27,7 +27,7 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/')
     needs: test
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
       - name: prepare artifact
         run: cp docker.mk Makefile && tar -czf docker4python.tar.gz compose.yml Makefile .env traefik.yml
       - name: get tag name
