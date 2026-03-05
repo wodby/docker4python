@@ -25,7 +25,7 @@ The Python stack consists of the following containers:
 | [Redis]               | 8.4, 8.2, 8.0, 7.4           | [wodby/redis]                             | ✓             |                    |
 | [MariaDB]             | 11.8, 11.4, 10.6, 10.5       | [wodby/mariadb]                           | ✓             |                    |
 | [Node.js]             | 24, 22, 20                   | [wodby/node]                              | ✓             |                    |
-| Vinyl ([Varnish])     | 6.0                          | [wodby/vinyl]                             | ✓             |                    |
+| Vinyl ([Varnish])     | 8.0, 6.0                     | [wodby/vinyl]                             | ✓             |                    |
 | [Solr]                | 9                            | [wodby/solr]                              | ✓             |                    |
 | OpenSearch            | 2                            | [opensearchproject/opensearch]            | ✓             |                    |
 | OpenSearch Dashboards | 2                            | [opensearchproject/opensearch-dashboards] | ✓             |                    |
