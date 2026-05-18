@@ -28,8 +28,7 @@ services:
     image: wodby/valkey:$VALKEY_TAG
 
   nginx:
-#    image: wodby/nginx:$NGINX_TAG
-    image: wodby/nginx
+    image: wodby/nginx:$NGINX_TAG
     environment:
       NGINX_STATIC_OPEN_FILE_CACHE: "off"
       NGINX_ERROR_LOG_LEVEL: debug
