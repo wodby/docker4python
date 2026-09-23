@@ -7,7 +7,7 @@
 Docker4Python is a set of docker images optimized for Python applications (suitable for Django). Use
 `compose.yml` file from the [latest stable release](https://github.com/wodby/docker4python/releases) to spin up local environment on Linux, Mac OS X and Windows.
 
-- Read the docs on [**how to use**](https://wodby.com/docs/stacks/python/local#usage)
+- Read the docs on [**how to use**](https://wodby.com/docs/1.0/stacks/python/local#usage)
 - Ask questions on [Discord](http://discord.wodby.com/)
 - Ask questions on [Slack](http://slack.wodby.com/)
 - Follow [@wodbycloud](https://twitter.com/wodbycloud) for updates announcements
@@ -16,30 +16,30 @@ Docker4Python is a set of docker images optimized for Python applications (suita
 
 The Python stack consists of the following containers:
 
-| Container             | Versions                     | Image                                     | ARM64 support | Enabled by default |
-|-----------------------|------------------------------|-------------------------------------------|---------------|--------------------|
-| [Nginx]               | 1.31, 1.30                   | [wodby/nginx]                             | ✓             | ✓                  |
-| [Python]              | 3.14, 3.13, 3.12, 3.11, 3.10 | [wodby/python]                            | ✓             | ✓                  |
-| [PostgreSQL]          | 18, 17, 16, 15, 14           | [wodby/postgres]                          | ✓             | ✓                  |
-| [Valkey]              | 9.0, 8.1, 8.0, 7             | [wodby/valkey]                            | ✓             | ✓                  |
-| [Redis]               | 8.6, 8.4, 8.2, 7.4           | [wodby/redis]                             | ✓             |                    |
-| [MariaDB]             | 11.8, 11.4, 10.11, 10.6      | [wodby/mariadb]                           | ✓             |                    |
-| [Node.js]             | 26, 24, 22                   | [wodby/node]                              | ✓             |                    |
-| Vinyl ([Varnish])     | 8.0, 6.0                     | [wodby/vinyl]                             | ✓             |                    |
-| [Solr]                | 10, 9                        | [wodby/solr]                              | ✓             |                    |
-| OpenSearch            | 2                            | [opensearchproject/opensearch]            | ✓             |                    |
-| OpenSearch Dashboards | 2                            | [opensearchproject/opensearch-dashboards] | ✓             |                    |
-| [Memcached]           | 1.6                          | [wodby/memcached]                         | ✓             |                    |
-| [Rsyslog]             | latest                       | [wodby/rsyslog]                           | ✓             |                    |
-| Gotenberg             | latest                       | [gotenberg/gotenberg]                     | ✓             | ✓                  |
-| Mailpit               | latest                       | [axllent/mailpit]                         | ✓             | ✓                  |
-| [OpenSMTPD]           | 7                            | [wodby/opensmtpd]                         | ✓             |                    |
-| Adminer               | 6                            | [wodby/adminer]                           | ✓             |                    |
-| Traefik               | 3                            | [_/traefik]                               | ✓             | ✓                  |
+| Container             | Versions                     | Image                                     | Enabled by default |
+|-----------------------|------------------------------|-------------------------------------------|--------------------|
+| [Nginx]               | 1.31, 1.30                   | [wodby/nginx]                             | ✓                  |
+| [Python]              | 3.14, 3.13, 3.12, 3.11, 3.10 | [wodby/python]                            | ✓                  |
+| [PostgreSQL]          | 18, 17, 16, 15, 14           | [wodby/postgres]                          | ✓                  |
+| [Valkey]              | 9.0, 8.1, 8.0, 7             | [wodby/valkey]                            | ✓                  |
+| [Redis]               | 8.6, 8.4, 8.2, 7.4           | [wodby/redis]                             |                    |
+| [MariaDB]             | 11.8, 11.4, 10.11, 10.6      | [wodby/mariadb]                           |                    |
+| [Node.js]             | 26, 24, 22                   | [wodby/node]                              |                    |
+| Vinyl ([Varnish])     | 8.0, 6.0                     | [wodby/vinyl]                             |                    |
+| [Solr]                | 10, 9                        | [wodby/solr]                              |                    |
+| OpenSearch            | 2                            | [opensearchproject/opensearch]            |                    |
+| OpenSearch Dashboards | 2                            | [opensearchproject/opensearch-dashboards] |                    |
+| [Memcached]           | 1.6                          | [wodby/memcached]                         |                    |
+| [Rsyslog]             | latest                       | [wodby/rsyslog]                           |                    |
+| Gotenberg             | latest                       | [gotenberg/gotenberg]                     | ✓                  |
+| Mailpit               | latest                       | [axllent/mailpit]                         | ✓                  |
+| [OpenSMTPD]           | 7                            | [wodby/opensmtpd]                         |                    |
+| Adminer               | 6                            | [wodby/adminer]                           |                    |
+| Traefik               | 3                            | [_/traefik]                               | ✓                  |
 
 ## Documentation
 
-Full documentation is available at https://wodby.com/docs/stacks/python/local
+Full documentation is available at https://wodby.com/docs/1.0/stacks/python/local
 
 ## Image tags
 
@@ -60,9 +60,6 @@ uses semantic product versions, and third-party images follow their own tag form
 See the [image revision policy](https://github.com/wodby/images#image-revisions)
 for details.
 
-Test fixtures use `*_IMAGE_REVISION` environment variables for the image release
-suffix.
-
 ## Maintenance
 
 We regularly update images used in this stack and release them together, see [releases page](https://github.com/wodby/docker4python/releases) for full changelog and update instructions. Most of routine updates for images and this project performed by [the bot](https://github.com/wodbot) via scripts located at [wodby/images](https://github.com/wodby/images).
@@ -78,29 +75,29 @@ We regularly update images used in this stack and release them together, see [re
 
 This project is licensed under the MIT open source license.
 
-[MariaDB]: https://wodby.com/docs/stacks/python/containers#mariadb
+[MariaDB]: https://wodby.com/docs/1.0/stacks/python/containers#mariadb
 
-[Memcached]: https://wodby.com/docs/stacks/python/containers#memcached
+[Memcached]: https://wodby.com/docs/1.0/stacks/python/containers#memcached
 
-[Nginx]: https://wodby.com/docs/stacks/python/containers#nginx
+[Nginx]: https://wodby.com/docs/1.0/stacks/python/containers#nginx
 
-[Node.js]: https://wodby.com/docs/stacks/python/containers#node
+[Node.js]: https://wodby.com/docs/1.0/stacks/python/containers#node
 
-[OpenSMTPD]: https://wodby.com/docs/stacks/python/containers#opensmtpd
+[OpenSMTPD]: https://wodby.com/docs/1.0/stacks/python/containers#opensmtpd
 
-[PostgreSQL]: https://wodby.com/docs/stacks/python/containers#postgres
+[PostgreSQL]: https://wodby.com/docs/1.0/stacks/python/containers#postgres
 
-[Valkey]: https://wodby.com/docs/stacks/python/containers#valkey
+[Valkey]: https://wodby.com/docs/1.0/stacks/python/containers#valkey
 
-[Redis]: https://wodby.com/docs/stacks/python/containers#redis
+[Redis]: https://wodby.com/docs/1.0/stacks/python/containers#redis
 
-[Rsyslog]: https://wodby.com/docs/stacks/python/containers#rsyslog
+[Rsyslog]: https://wodby.com/docs/1.0/stacks/python/containers#rsyslog
 
-[Python]: https://wodby.com/docs/stacks/python/containers#python
+[Python]: https://wodby.com/docs/1.0/stacks/python/containers#python
 
-[Solr]: https://wodby.com/docs/stacks/solr
+[Solr]: https://wodby.com/docs/1.0/stacks/solr
 
-[Varnish]: https://wodby.com/docs/stacks/python/containers#varnish
+[Varnish]: https://wodby.com/docs/1.0/stacks/python/containers#varnish
 
 [_/traefik]: https://hub.docker.com/_/traefik
 
