@@ -8,6 +8,7 @@ Docker4Python is a set of docker images optimized for Python applications (suita
 `compose.yml` file from the [latest stable release](https://github.com/wodby/docker4python/releases) to spin up local environment on Linux, Mac OS X and Windows.
 
 - Read the docs on [**how to use**](https://wodby.com/docs/1.0/stacks/python/local#usage)
+- Deploy to production with the [Python stack on Wodby](https://wodby.com/deploy-python)
 - Ask questions on [Discord](http://discord.wodby.com/)
 - Ask questions on [Slack](http://slack.wodby.com/)
 - Follow [@wodbycloud](https://twitter.com/wodbycloud) for updates announcements
@@ -63,6 +64,20 @@ for details.
 ## Maintenance
 
 We regularly update images used in this stack and release them together, see [releases page](https://github.com/wodby/docker4python/releases) for full changelog and update instructions. Most of routine updates for images and this project performed by [the bot](https://github.com/wodbot) via scripts located at [wodby/images](https://github.com/wodby/images).
+
+## Deploy to production
+
+Docker4Python is for local development with Docker Compose. To run a Python application in production, use the [Python stack on Wodby](https://wodby.com/deploy-python), or the [Django stack](https://wodby.com/deploy-django) for a Django project.
+
+The Python stack runs your repository on Kubernetes under Gunicorn, with PostgreSQL, Valkey, and mail as optional services. The Django stack includes PostgreSQL and Valkey, and applies migrations and collects static files after every deployment. You choose where either runs: Wodby Cloud, a Kubernetes cluster in your own cloud account, or a single server of your own.
+
+* Start from the Python or Django boilerplate, or connect your own repository
+* Gunicorn workers and timeouts are variables on the app service
+* Connection settings for a database, Valkey, or mail are added when you link the service
+* CI/CD is built in
+* A free plan is available, including on a server of your own
+
+Read the [Python stack guide](https://wodby.com/docs/2.0/stacks/catalog/python/) and the [Django stack guide](https://wodby.com/docs/2.0/stacks/catalog/django/), or see [Python hosting on Wodby](https://wodby.com/python-hosting) and [pricing](https://wodby.com/pricing).
 
 ## Other Docker4x projects
 
